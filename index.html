@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <title>Register page</title>
+</head>
+<body>
+     <div class="container-sm">
+              <h2>Registered Employee</h2>
+         <form class="form">
+         <div class="row ">
+             <div class="col">
+                      <label for="fname" class="form-lable">First Name*</label>
+                     <input id="fname" type="text" name="FirstName" required class="form-control">
+             </div>
+            <div class="col">
+                  <label class="form-lable">Last Name*</label>
+                 <input type="text" name="LastName" required class="form-control">
+
+            </div>
+
+         </div>
+       
+     <div class="row">
+        <div class="col">
+        <label  for="date" class="form-lable">Date of Birth*</label>
+        <input id="date" type="date" name="Date of birth"required class="form-control">
+      </div>
+        
+        <div class="col">
+      <label for="place" class="form-lable">Place of Birth*</label>
+        <input id="place" type="text" name="Place of Birth" required class="form-control">
+        </div>
+
+     </div>
+      
+     
+         <div class="col">
+            <label>Gender</label><br>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female<br><br>
+
+         </div>
+        
+        <div class="">
+        <select name="Department" id="Department">
+        <option value="HR">HR</option>
+         <option value="Finance">Finance</option>
+          <option value="IT">IT</option>
+            <option value="marketing">marketing</option>
+           </select>
+
+      </div>
+        <label class="mt-2">Status *</label>
+        <div class="">
+        <select name="Status" id="Status">
+        <option value="Permenent">Permenent</option>
+        <option value="Temporal">Temporal</option>
+        <option value="Intern">Intern</option>
+         <option value="marketing">marketing</option>
+           </select>
+           <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+           <div>
+
+            <button type="mt-5" class="btn btn-dark ">Submit</button>
+            <input type="reset" class="btn btn-dark">
+           </div>
+      </div>
+      
+
+     </form>
+    
+    </div>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html> 
