@@ -14,6 +14,10 @@ side bar
         box-shadow: 10px 10px 5px 12px white;
    color: white;
    side a:hover
+<<<<<<< HEAD
    background-color:rgb(26, 116, 116);
 
    
+=======
+   background-color:rgb(26, 116, 116);
+>>>>>>> 6fa867d95df34da7188af192e548885b1c2fc710
