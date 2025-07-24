@@ -4,7 +4,7 @@
 
     */
     body{
-        background-image: url(image/logo.jpg);
+        background-image: url(../image/logo.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -26,7 +26,6 @@
     background: linear-gradient(to bottom,grey,black);
     padding: 3px;
     box-shadow: 0 -4px 10px rgb(0,0,0,.2);
-   
 
 }
 .side a {

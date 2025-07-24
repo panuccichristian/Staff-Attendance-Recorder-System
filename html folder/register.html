@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Attandance Recorder System</title>
+    <link rel="stylesheet" href="../css folder/bootstrap.min.css">
+    <link rel="stylesheet" href="../css folder/index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fliut">
+        <nav class="navbar navbar-expand  shadow sticky-top">
+           <div class="container">
+<img src="../image/l3.jpg" alt="logo" width="90px" title="Staff Attendace">
+            <ul class="navbar-nav">
+  <div class="navbar-nav"><h2>Staff Attandance Recorder System</h2></div>
+            </ul>
+            <ul class="navbar-nav">
+               <div class="clock">
+                <span id="h">00</span>
+                <span>:</span>
+                <span id="m">00</span>
+                <span>:</span>
+                <span id="s">00</span>
+            </div>
+            </ul>   
+        
+     </div>
+  
+         
+        </nav>
+         <div class="side">
+          
+            <a href="#"><img src="../image/icons8-home-24.png"class="icons">Home</a>
+          <a href="#"><img src="../image/icons8-attendance-48.png"class="icons">Register Employee</a>
+          <a href="#Registered Attendace"><img src="../image/icons8-attendance-48.png"class="icons">Registered Attendace</a>
+     <a href="#Display Employee"><img src="../image/icons8-attendance-48.png"class="icons">Display Employee</a>
+        
+        </div>
+     </div>
+
+      <div class="footer">
+        <footer> <marquee behavior="" direction="right" > All actions are recorded, verify information before saving </marquee><span> STAFF Attandance Recorder System</span></footer>
+        <footer>2025/2026/.</footer>
+            
+      </div>
+   
+    <div>
+
+    </div> 
+ <script src="script.js"></script>
+  <script>
+      let hrs = document.getElementById("h")
+      let min = document.getElementById("m")
+      let sec = document.getElementById("s")
+
+      setInterval(() => {
+        
+       let currentTime = new Date();
+
+      hrs.innerHTML = (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours();
+      min.innerHTML =(currentTime.getMinutes() < 10 ? "0" : "") + currentTime.getMinutes();
+      sec.innerHTML =(currentTime.getSeconds() < 10 ? "0" : "") + currentTime.getSecond();
+
+      },1000);
+
+     </script>
+ 
+</body>
+</html>

@@ -1,0 +1,19 @@
+side bar
+    background-color:grey;
+    body
+     background-image: url(image/logo.jpg);
+     .navbar
+    background-color: #A3D9Ff;
+    box-shadow: 5px;
+    side
+     background: linear-gradient(to bottom,grey,black);
+      background-color:grey;
+      box-shadow: 0 -4px 10px rgb(0,0,0,.2);
+      .footer
+       background-color: black;
+        box-shadow: 10px 10px 5px 12px white;
+   color: white;
+   side a:hover
+   background-color:rgb(26, 116, 116);
+
+   
