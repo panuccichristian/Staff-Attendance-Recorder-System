@@ -7,12 +7,13 @@
   
  <link rel="stylesheet" href="../css folder/bootstrap.min.css">
     <link rel="stylesheet" href="../css folder/index.css">
+    <link rel="stylesheet" href="index.css">
 
     <title>Register page</title>
 </head>
 <body>
      <div class="container">
-              <h2>Registered Employee</h2>
+              <h2>Register Staff</h2>
               
         
                     <form class="form">
@@ -50,8 +51,9 @@
 
          </div>
         
-        <div class="">
-        <select name="Department" id="Department">
+        <div class=""
+                <label class="mt-2 form-lable">Department *</label>
+        <select name="Department" id="Department" class="form-select">
         <option value="HR">HR</option>
          <option value="Finance">Finance</option>
           <option value="IT">IT</option>
@@ -59,24 +61,17 @@
            </select>
 
       </div>
-        <label class="mt-2">Status *</label>
+        <label class="mt-2 form-lable">Status *</label>
         <div class="">
-        <select name="Status" id="Status">
+        <select name="Status" id="Status" class="form-select">  
         <option value="Permenent">Permenent</option>
         <option value="Temporal">Temporal</option>
         <option value="Intern">Intern</option>
          <option value="marketing">marketing</option>
            </select>
-           <div class="form-group">
-  <label for="comment">Comment:</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
-</div>
-
-           <div>
-
-            <button type="mt-3" class=".btn-dark .btn-white">Submit</button>
-           <BUtton type="mt-4" class=".btn-dark .btn-dark">RESET</BUtton>
-          
+           <div class="button">
+            <button>Resert</button>
+            <button>Submit</button>
            </div>
       </div>
       
