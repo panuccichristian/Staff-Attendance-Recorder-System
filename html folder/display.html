@@ -3,74 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Attendace</title>
+    <link rel="stylesheet" href="../css folder/bootstrap.min.css">
+    <link rel="stylesheet" href="../html folder/display.css">
+    <title>Display Attandance</title>
 </head>
 <body>
-   <style>
-    body{
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
-        padding: 30px;
-        
-    }
-    h2{
-        text-align: center;
-        color: #333;
-
-    }
-
-    table{
-        width: 100%;
-        border-collapse: #fff;
-        margin-top: 20px;
-        box-shadow: 0 2px 8px rgb(0, 0, 0.1);
-        background-color: #fff;
-
-    }
-
-    th,td{
-        padding: 12px 15px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    }
-
-    th{
-        background-color:#4CAF50;
-        color: white;
-    }
-
-    tr:hover{
-        background-color: #f1f1f1;
-    }
-
-    .status-present{
-        color: green;
-        font-weight: bold;
-    }
-
-    .status-absent{
-        color: red;
-        font-weight: bold;
-    }
-    .status-late{
-        color: orange;
-        font-weight: bold;
-
-    }
-   </style>
-   </head>
-   <body>
-   <h2>Display Attandance</h2>
-   <table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Department</th>
-            <th>Status</th>
-            <th>Time In</th>
-            <th>Time Out</th>
-        </tr>
+    <table class="table table-striped"  style="width: 800px; text-align: center;" id="dipslay-table">
+<thead class="thead-dark" style="background:black;color:white">
+      <tr style="background:black;color:white">
+        <th>Name</th>
+        <th>Document</th>
+        <th>Status</th>
+        <th>Time in</th>
+        <th>Time out</th>
+      </tr>
     </thead>
-   </table>
+    </table>
 </body>
-</html>  
+</html>

@@ -6,7 +6,9 @@
     <title>Staff Attandance Recorder System</title>
     <link rel="stylesheet" href="../css folder/bootstrap.min.css">
     <link rel="stylesheet" href="../css folder/index.css">
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="../html folder/display.css">
+
+   
 </head>
 <body>
     <div class="container-fliut">
@@ -24,22 +26,23 @@
                 <span>:</span>
                 <span id="s">00</span>
             </div>
-            </ul>   
-        
+            </ul>    
      </div>
   
          
         </nav>
-        <div style="display: flex;">
+        <div style="display: flex; ">
           <div class="side">
           
-            <a href="#"><img src="../image/icons8-home-24.png"class="icons">Home</a>
-          <a href="../html folder/index.html"><img src="../image/icons8-attendance-48.png"class="icons">Register Staff</a>
-          <a href="../html folder/attendance.html"><img src="../image/icons8-attendance-48.png"class="icons">Registered Attendace</a>
-     <a href="../html folder/display.html"><img src="../image/icons8-attendance-48.png"class="icons">Display Attendace</a>
+            <a href="register.html"><img src="../image/icons8-home-24.png"class="icons">Home</a>
+          <a href="#" onclick="loadPage('index.html')"><img src="../image/icons8-attendance-48.png"class="icons">Register Staff</a>
+          <a href="#"  onclick="loadPage('attendance.html')" ><img src="../image/icons8-attendance-48.png"class="icons">Registered Attendace</a>
+     <a href=" #" onclick="loadPage('display.html')"  ><img src="../image/icons8-attendance-48.png"class="icons">Display Attendace</a>
         
         </div>
-         <div></div>
+            <div id="main"></div>
+            <div></div>
+            
         </div>
      </div>
 
@@ -52,23 +55,8 @@
     <div>
 
     </div> 
- <script src="script.js"></script>
-  <script>
-      let hrs = document.getElementById("h")
-      let min = document.getElementById("m")
-      let sec = document.getElementById("s")
-
-      setInterval(() => {
-        
-       let currentTime = new Date();
-
-      hrs.innerHTML = (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours();
-      min.innerHTML =(currentTime.getMinutes() < 10 ? "0" : "") + currentTime.getMinutes();
-      sec.innerHTML =(currentTime.getSeconds() < 10 ? "0" : "") + currentTime.getSecond();
-
-      },1000);
-
-     </script>
+ <script src="../javascipt folder/script.js"></script>
+  
  
 </body>
 </html>

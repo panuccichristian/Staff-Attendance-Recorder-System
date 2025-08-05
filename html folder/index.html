@@ -2,17 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
- <link rel="stylesheet" href="../css folder/bootstrap.min.css">
-    <link rel="stylesheet" href="../css folder/index.css">
+   
+  <link rel="stylesheet" href="../css folder/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 
     <title>Register page</title>
 </head>
 <body>
-     <div class="container">
+    <div class="container" id="container">
               <h2>Register Staff</h2>
               
         
@@ -50,31 +47,29 @@
         <input type="radio" name="gender" value="female" required> Female<br><br>
 
          </div>
-        
-        <div class=""
-                <label class="mt-2 form-lable">Department *</label>
-        <select name="Department" id="Department" class="form-select">
-        <option value="HR">HR</option>
-         <option value="Finance">Finance</option>
-          <option value="IT">IT</option>
-            <option value="marketing">marketing</option>
-           </select>
-
+                        <div class="mb-3">
+                            <label for="Department" class="form-lable">Department</label>
+                            <select class="form-select" id="department" required>
+                                <option value=""disabled selected> select your department</option>
+                                <option>HR</option>
+                                <option>IT</option>
+                                <option>Finance</option>
+                                <option>Marketing</option>
+                                </select>
       </div>
-        <label class="mt-2 form-lable">Status *</label>
-        <div class="">
-        <select name="Status" id="Status" class="form-select">  
-        <option value="Permenent">Permenent</option>
-        <option value="Temporal">Temporal</option>
-        <option value="Intern">Intern</option>
-         <option value="marketing">marketing</option>
-           </select>
+                              <div class="mb-3">
+                            <label for="Status" class="form-lable">Status</label>
+                            <select class="form-select" id="stattus" required>
+                                <option value=""disabled selected> select Status</option>
+                                <option>permanent</option>
+                                <option>temporal</option>
+                                <option>intern</option>
+                                </select>
            <div class="button">
             <button>Resert</button>
             <button>Submit</button>
            </div>
-      </div>
-      
+          </d>
 
      </form>
     
