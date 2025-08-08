@@ -8,7 +8,8 @@
     width: 100%;
     max-width: 500px;
     border: 2px solid black;
-      
+    text-decoration: rgb(107, 164, 184); 
+    text-emphasis-color: rgb(17, 17, 85); 
 } 
 
 .button{
