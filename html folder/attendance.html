@@ -13,30 +13,23 @@
         <div class="container" id="container">
             <div class="Attendace form">
                 <h2 class="mb-4" text-center>Register Attandance</h2>
-                <form id="Attendace form">
-                    <div class="mb-3">
-                            <label for="Department" class="form-lable">Select your name</label>
-                            <select class="form-select" id="department" required>
-                                <option value=""disabled selected>Select your name</option>
-                                <option>Pride</option>
-                                <option>Ndip</option>
-                                <option>Winner</option>
-                                <option>Maxwell</option>
-                                <option>Victor</option>
-                                </select>
-                                <label  for="date" class="form-lable">Date*</label>
-        <input id="date" type="date" name="Date "required class="form-control">
-                
-
-                        <div class="mb-3">
+                <form id="Attendace form" onsubmit="attendance()">  <div class="mb-3">
                             <label for="Department" class="form-lable">Department</label>
-                            <select class="form-select" id="department" required>
+                            <select onchange="selectedDepartment()" class="form-select" id="department" required>
                                 <option value=""disabled selected> select your department</option>
                                 <option>HR</option>
                                 <option>IT</option>
                                 <option>Finance</option>
                                 <option>Marketing</option>
+                        </select>
+
+                    <div class="mb-3">
+                            <label for="Department" class="form-lable">Select your name</label>
+                            <select class="form-select" id="staffs" required>
+                                <option value=""disabled selected>Select your name</option>
+                                
                                 </select>
+                              
     </div>
     <div class="mb-3">
         <label for="comment" class="form-lable">Comment (optional)</label>

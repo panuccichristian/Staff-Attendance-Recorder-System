@@ -1,19 +1,34 @@
-function updateClock() {
-    const now = new Date();
-    let hours = now.getHours();
-    let minute = now.getMinutes();
-    let seconds = now.getMinutes();
+       let hrs = document.getElementById("h")
+      let min = document.getElementById("m")
+      let sec = document.getElementById("s")
 
-    // pad single digits with leading zeros
-    hours   = String(hours).padStart(2, '0');
-    minutes = String(minutes).padStart(2,'0');
-    seconds  =  String(seconds).padStart(2,'0');
-    const currentTime = '${hours}:${minutes}:${seconds}';
-    document.getElementById('clock').textcontent =currentTime;
+      setInterval(() => {
+        
+       let currentTime = new Date();
 
+      hrs.innerHTML = (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours();
+      min.innerHTML =(currentTime.getMinutes() < 10 ? "0" : "") + currentTime.getMinutes();
+    //  sec.innerHTML =(currentTime.getSeconds() < 10 ? "0" : "") + currentTime.getSecond();
+
+      },1000);
+
+
+
+function loadPage(page){
+fetch(page).then((res) =>{
+
+    if(!res.ok){
+            document.getElementById("main").innerHTML = " <h3> Page not Found </h3>";
+          
+    }
+      return res.text();
+}) .then(data=>{
+    document.getElementById("main").innerHTML =data;
+
+}).catch(error=>{
+                document.getElementById("main").innerHTML = error;
+
+})
 }
 
-//update clock immediatly and every second
-updateClock();
-setInterval(updateClock, 1000); 
-    
+

@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css folder/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 
@@ -13,15 +14,15 @@
               <h2>Register Staff</h2>
               
         
-                    <form class="form">
+                    <form class="form"  onsubmit="getForm()" id="check">
                     <div class="row ">
                     <div class="col">
                       <label for="fname" class="form-lable">First Name*</label>
-                     <input id="fname" type="text" name="FirstName" required class="form-control">
+                     <input id="fname" type="text" name="FirstName"  class="form-control">
              </div>
             <div class="col">
-                  <label class="form-lable">Last Name*</label>
-                 <input type="text" name="LastName" required class="form-control">
+                  <label class="form-lable" for="">Last Name*</label>
+                 <input type="text" name="LastName"  class="form-control" id="Lastname">
 
             </div>
 
@@ -30,26 +31,26 @@
      <div class="row">
         <div class="col">
         <label  for="date" class="form-lable">Date of Birth*</label>
-        <input id="date" type="date" name="Date of birth"required class="form-control">
+        <input id="date" type="date" name="Date of birth" class="form-control">
       </div>
         
         <div class="col">
       <label for="place" class="form-lable">Place of Birth*</label>
-        <input id="place" type="text" name="Place of Birth" required class="form-control">
+        <input id="place" type="text" name="Place of Birth" class="form-control">
         </div>
 
      </div>
       
      
-         <div class="col">
+         <div class= "col">
             <label>Gender</label><br>
-        <input type="radio" name="gender" value="male" required> Male
-        <input type="radio" name="gender" value="female" required> Female<br><br>
+        <input type="radio" name="gender" value="male"> Male 
+        <input id="Gender" type="radio" name="gender" value="female"> Female<br><br>
 
          </div>
                         <div class="mb-3">
                             <label for="Department" class="form-lable">Department</label>
-                            <select class="form-select" id="department" required>
+                            <select class="form-select" id="department">
                                 <option value=""disabled selected> select your department</option>
                                 <option>HR</option>
                                 <option>IT</option>
@@ -59,15 +60,15 @@
       </div>
                               <div class="mb-3">
                             <label for="Status" class="form-lable">Status</label>
-                            <select class="form-select" id="stattus" required>
+                            <select class="form-select" id="status">
                                 <option value=""disabled selected> select Status</option>
                                 <option>permanent</option>
                                 <option>temporal</option>
                                 <option>intern</option>
                                 </select>
            <div class="button">
-            <button>Resert</button>
-            <button>Submit</button>
+            <button type="reset">Resert</button>
+            <button type="submit">Submit</button>
            </div>
           </d>
 
@@ -75,6 +76,8 @@
     
     </div>
     <script src="bootstrap.min.js"></script>
+    <script src="../javascipt folder/collect data.js">
+    </script>
   
 </body>
 

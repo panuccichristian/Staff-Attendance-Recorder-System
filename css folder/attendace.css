@@ -1,0 +1,64 @@
+
+
+.attendace-form{
+    background-color: grey;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 1px;
+    box-shadow: 10px 30px rgb(116, 82, 21);
+    
+    
+}
+.attendace-form h2{
+    text-align: center;
+    font-weight: 600;
+    color: rgb(236, 165, 71);
+}
+.form-label{
+    font-weight: 500;
+    color: #3f9abe;
+}
+.form-control,
+.form-select{
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid;
+
+}
+.form-check-input{
+    cursor: pointer;
+}
+.form-check-label{
+    margin-left: 5px;
+    font-weight: 400px;
+
+
+}
+.btn-primary{
+    background-color: rgb(43, 151, 43);
+    border: none;
+    padding: 12px;
+    font-weight: 60;
+    font-size: 16;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+}
+.btn-primary:hover{
+    background-color: rgb(43, 151, 43);
+    
+
+}
+.btn-outline-secondary{
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 8px 16px;
+    text-decoration: none ;
+
+}
+#confirmationMessage{
+    font-size: 16px;
+    font-weight: 5oo;
+    
+}

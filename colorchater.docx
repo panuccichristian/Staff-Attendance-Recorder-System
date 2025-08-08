@@ -1,23 +1,26 @@
-side bar
-    background-color:grey;
-    body
-     background-image: url(image/logo.jpg);
-     .navbar
-    background-color: #A3D9Ff;
-    box-shadow: 5px;
-    side
-     background: linear-gradient(to bottom,grey,black);
-      background-color:grey;
-      box-shadow: 0 -4px 10px rgb(0,0,0,.2);
-      .footer
-       background-color: black;
-        box-shadow: 10px 10px 5px 12px white;
-   color: white;
-   side a:hover
-<<<<<<< HEAD
-   background-color:rgb(26, 116, 116);
+#Staff Attendance  Record System
 
-   
-=======
-   background-color:rgb(26, 116, 116);
->>>>>>> 6fa867d95df34da7188af192e548885b1c2fc710
+#Color chater documentation
+
+#presentation of colors
+*primary colors
+-Light Blue
+
+*Secondary Colors
+-Grey
+-Green
+
+#Parts of the System
+-**background(main psge):** color:white
+-**Header and Footer:**Light blue and Black background-color.
+-**logo:** composed of white and dark blue.
+-** Aplication name:**Color: Deep Blue.
+-**Navigatiob menue:**Color:Grey.
+-**Hover effect:** color:Deep blue.
+-**side bar text:**color:white.
+-**Footer:**color:black.
+-##Text in the footer:**color:white.
+
+##Buttons found in the System
+-##Redister staff submit and reset Buttons:**color:blue
+-##Register attendance sign in :**color:Green

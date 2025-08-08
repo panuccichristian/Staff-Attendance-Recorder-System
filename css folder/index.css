@@ -3,12 +3,10 @@
     margin: auto;
 
     */
-    body{
-        background-image: url(../image/logo.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+    
+body{
+      background-color: #FFFFFF;
+}
 .navbar{
     background-color: #A3D9Ff;
     box-shadow: 5px;
@@ -60,3 +58,7 @@
     width: 20px;
     height: 20px;
 } */
+
+#main{
+    margin: 10px auto;
+}
