@@ -73,7 +73,7 @@ function registerStaff(){
         firstName:"Pryde",
         lastName:"Angum",
         dateOfBirth:"3/05/25",
-        placeOfBirth:"Doula"
+        placeOfBirth:"Doula",
         dePartment:"IT",
         Status:"intern",
     };

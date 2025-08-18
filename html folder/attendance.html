@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="../css folder/attendace.css">
         <link rel="stylesheet" href="attendance.css">
 
-    <title>Register Attendace</title>
+    <title>Register Attendance</title>
 </head>
 <body>
         <div class="container" id="container">
             <div class="Attendace form">
-                <h2 class="mb-4" text-center>Register Attandance</h2>
+                <h2 class="mb-4" text-center>Register Attendance</h2>
                 <form id="Attendace form" onsubmit="attendance()">  <div class="mb-3">
                             <label for="Department" class="form-lable">Department</label>
                             <select onchange="selectedDepartment()" class="form-select" id="department" required>
@@ -21,6 +21,16 @@
                                 <option>IT</option>
                                 <option>Finance</option>
                                 <option>Marketing</option>
+                                <option>Printing</option>
+                                <option>Maintenance</option>
+                                <option>Mounting</option>
+                                <option>Fbaric printing</option>
+                                 <option>Screen printing</option>
+                                <option>Accounting</option>
+                                <option>PDL</option>
+                                <option>Canteen</option>
+                                 <option>Finishing</option>
+                                <option>Accounting</option>
                         </select>
 
                     <div class="mb-3">
@@ -33,14 +43,14 @@
     </div>
     <div class="mb-3">
         <label for="comment" class="form-lable">Comment (optional)</label>
-        <textarea class="form-control" id="comment" name="comment" rows="3"placeholde="Enter your comment here...">ss</textarea>
+        <textarea class="form-control" id="comment" name="comment" rows="3"placeholde="Enter your comment here..."></textarea>
 
     </div>
-    <button type="submit" class="btn btn-primary w-100">Sign In</button>
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
 </form>
 
 <div id="confirmationMssage" class="mt-3 text-sucess text-center style="display: none;>
-    ✅Attendace recorded sucessfully!
+    ✅Attendance recorded sucessfully!
 </div>
 
 <diV id="something"></diV>
