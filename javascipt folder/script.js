@@ -43,6 +43,29 @@ var attendances = JSON.parse(localStorage.getItem("attendance"));
     });
 
 
+} else if(page =="home.html"){
+  console.log("hii");
+    var value = document.getElementById('table');
+    const staff = JSON.parse(localStorage.getItem("staffArray"));
+    const display = document.getElementById('table');
+    staff.forEach((staffArray,index ) => {
+      console.log( staffArray.firstName);
+      const row = document.createElement('tr');
+      row.innerHTML = `
+      <td>${index + 1}</tb>
+      <td>${staffArray.firstName}</td>
+       <td>${staffArray.lastName}</td>
+       <td>${staffArray.dateOfBirth}</td>
+       <td>${staffArray.placeOfBirth}</td>
+       <td>${staffArray.gender}</td>
+       <td>${staffArray.department}</td>
+       <td>${staffArray.status}</td>
+      
+
+      
+    `;
+      value.appendChild(row);
+    });
 }
 }
 

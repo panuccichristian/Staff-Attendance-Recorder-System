@@ -140,7 +140,6 @@ async function loadpage(pageUrl) {
       value.appendChild(row);
     });
   }
-}
 
 function Loadpage(page) {
   fetch(page)
@@ -155,5 +154,6 @@ function Loadpage(page) {
     .then((data) => {
       document.getElementById('main').innerHTML = data;
     });
+}
 }
 }
